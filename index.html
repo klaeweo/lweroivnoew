@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <!--Links -->
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <script src="https://kit.fontawesome.com/2977471f85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--javscript -->
+    <script type="module" src="main.js" defer></script>
+    <!--title -->
+    <title>Movies</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="icon.png" alt="home">
+        </a>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search a movie">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <section class="hero">
+        <img src="poster.jpg" alt="poster">
+        <section>
+            <div>
+                <h1>
+                    Oppenheimer
+                </h1>
+                <p>
+                    "Oppenheimer" is a biographical drama about J. Robert Oppenheimer, the scientist behind the atomic
+                    bomb.
+                    It follows his involvement in the Manhattan Project during World War II, his moral struggles, and
+                    the impact of his work on humanity.
+                </p>
+            </div>
+            <button type="button">
+                <i class="fa-solid fa-play"></i>
+                Resume
+            </button>
+        </section>
+    </section>
+
+
+    <main>
+        <!-- recently watched carousel -->
+        <article id="recent">
+            <h2>
+                RECENTLY WATCHED
+            </h2>
+
+            <hr>
+
+            <section>
+                <i class="fa-solid fa-chevron-left" id="scrl_bd"></i>
+                <div id="slider">
+
+                    <div class="image-wrap">
+                        <div>
+                            <img src="poster.jpg" alt="poster">
+                        </div>
+                        <h4>
+                            Oppenheimer
+                        </h4>
+                    </div>
+
+
+                </div>
+                <i class="fa-solid fa-chevron-right" id="scrl_fd"></i>
+            </section>
+
+        </article>
+
+        <!-- latest movies -->
+        <article id="latest">
+            <h2>
+                LATEST MOVIES
+            </h2>
+
+            <hr>
+
+            <section>
+
+                <div class="image-wrap">
+                    <div>
+                        <img src="poster2.jpg" alt="poster">
+                    </div>
+                    <h4>
+                        peaky blinders
+                    </h4>
+                </div>
+
+
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
+
+<!-- https://www.imdb.com/search/title/?title_type=feature&user_rating=5,10&num_votes=500,&primary_language=ml&sort=release_date,desc -->
