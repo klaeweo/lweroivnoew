@@ -4,14 +4,15 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <!-- vidsrc -->
+    <meta name="referrer" content="origin" />
     <!--Links -->
     <link rel="icon" type="image/x-icon" href="icon.png">
     <script src="https://kit.fontawesome.com/2977471f85.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <!--javscript -->
-    <script type="module" src="main.js" defer></script>
+    <script src="main.js" defer></script>
     <!--title -->
     <title>Movies</title>
 </head>
@@ -21,87 +22,54 @@
         <a href="index.html">
             <img src="icon.png" alt="home">
         </a>
+    <!-- search -->
         <div class="search-box">
             <input type="text" id="search" placeholder="Search a movie">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i id="search-ic" class="fa-solid fa-magnifying-glass"></i>
         </div>
     </header>
-    <section class="hero">
-        <img src="poster.jpg" alt="poster">
-        <section>
-            <div>
-                <h1>
-                    Oppenheimer
-                </h1>
-                <p>
-                    "Oppenheimer" is a biographical drama about J. Robert Oppenheimer, the scientist behind the atomic
-                    bomb.
-                    It follows his involvement in the Manhattan Project during World War II, his moral struggles, and
-                    the impact of his work on humanity.
-                </p>
-            </div>
-            <button type="button">
-                <i class="fa-solid fa-play"></i>
-                Resume
-            </button>
+
+    <div id="home">
+    <!-- hero -->
+        <section class="hero">
         </section>
+
+        <main>
+    <!-- watchlist -->
+            <article>
+                <h2>
+                    WATCHLIST
+                </h2>
+                <hr>
+                <section id="watchlist">
+                </section>
+            </article>
+
+        </main>
+
+    </div>
+
+    <!-- search results container -->
+
+    <section id="result-container"></section>
+
+    <!-- movie page container -->
+
+    <section id="movie-page"></section>
+
+    <!-- credits container -->
+
+    <section id="credits">
+        <i class="fa-solid fa-circle-info" onclick="openInfo()"></i>
+        <div class="info">
+            <i class="fa-solid fa-circle-xmark" onclick="closeInfo()"></i>
+            <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_2-9665a76b1ae401a510ec1e0ca40ddcb3b0cfe45f1d51b77a308fea0845885648.svg" alt="TMDB Logo">
+            <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+        </div>
+        <div class="overlay" onclick="closeInfo()"></div>
     </section>
 
 
-    <main>
-        <!-- recently watched carousel -->
-        <article id="recent">
-            <h2>
-                RECENTLY WATCHED
-            </h2>
-
-            <hr>
-
-            <section>
-                <i class="fa-solid fa-chevron-left" id="scrl_bd"></i>
-                <div id="slider">
-
-                    <div class="image-wrap">
-                        <div>
-                            <img src="poster.jpg" alt="poster">
-                        </div>
-                        <h4>
-                            Oppenheimer
-                        </h4>
-                    </div>
-
-
-                </div>
-                <i class="fa-solid fa-chevron-right" id="scrl_fd"></i>
-            </section>
-
-        </article>
-
-        <!-- latest movies -->
-        <article id="latest">
-            <h2>
-                LATEST MOVIES
-            </h2>
-
-            <hr>
-
-            <section>
-
-                <div class="image-wrap">
-                    <div>
-                        <img src="poster2.jpg" alt="poster">
-                    </div>
-                    <h4>
-                        peaky blinders
-                    </h4>
-                </div>
-
-
-            </section>
-        </article>
-    </main>
 </body>
 
 </html>
-
-<!-- https://www.imdb.com/search/title/?title_type=feature&user_rating=5,10&num_votes=500,&primary_language=ml&sort=release_date,desc -->
