@@ -40,6 +40,8 @@
   --info-ht: 30rem;
   --info-img-wt: 30rem;
   --info-i-pos: 1.5rem;
+  --movie-pg-overlay-bg: linear-gradient(to top right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1)),
+                        linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
 }
 
 /* media query */
@@ -75,6 +77,7 @@
     --info-ht: 10rem;
     --info-img-wt: 10rem;
     --info-i-pos: 1rem;
+    --movie-pg-overlay-bg: transparent;
   }
 
   .hero {
@@ -347,9 +350,7 @@ body > section {
       align-items: center;
       justify-content: center;
 
-      background: 
-      linear-gradient(to top right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1)),
-      linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
+      background: var(--movie-pg-overlay-bg);
   
       button {
           width: var(--movie-pg-btn-wt_ht);
@@ -377,7 +378,7 @@ body > section {
   .details {
       display: var(--d-none-481);
       color: var(--light);
-      width: 49em;
+      width: 90%;
       position: absolute;
       bottom: 7%;
       left: 4%;
